@@ -2,7 +2,7 @@ require('dotenv').config();
 
 export const env = (key: string, fallback?: any): any => {
   const env = process.env[key];
-  const value = env !== undefined
+  const value = env
     ? env
     : fallback || '';
 

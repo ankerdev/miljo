@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require('dotenv').config();
 exports.env = function (key, fallback) {
     var env = process.env[key];
-    var value = env !== undefined
+    var value = env
         ? env
         : fallback || '';
     if (typeof value === 'string') {
