@@ -1,5 +1,5 @@
-# env
-A simple module to load environment variables from a `.env` file, and covert them to their respective type.
+# miljo
+A simple module to load environment variables from a `.env` file, and convert them to their respective type.
 It currently handles `string`, `number` (integer and float) and `boolean` values.
 
 ## Signature
@@ -17,9 +17,9 @@ REQUESTS_PER_MIN=10.5
 
 `.js`/`.ts` file:
 ```ts
-import { env } from 'env';
+import { env } from 'miljo';
 const nodeEnv: string = env('NODE_ENV', 'development');
-const throttleRequests: boolean = env('THROTTLE_REQUESTS', false);
+const throttleRequests: boolean = env('THROTTLE_REQUESTS');
 const requestsPerMin: number = env('THROTTLE_REQUESTS', 1);
 ```
 

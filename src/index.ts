@@ -21,4 +21,4 @@ export const env = (key: string, fallback?: any): any => {
   }
 
   return value;
-}
+};

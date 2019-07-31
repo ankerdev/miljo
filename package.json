@@ -1,22 +1,33 @@
 {
-  "name": "env",
+  "name": "miljo",
   "version": "1.0.0",
   "description": "A simple package to retrieve environment variables",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/tsc",
+    "prepublish": "./node_modules/.bin/tsc",
+    "test": "./node_modules/.bin/ts-mocha -- -p tsconfig.json src/**/*.spec.ts"
   },
   "keywords": [
+    "Config",
+    "Env",
+    "Env var",
+    "Environment variables",
+    "JavaScript",
+    "Node.js",
     "TypeScript"
   ],
   "author": "Jonas Anker Jahr",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^7.0.0"
+    "dotenv": "^8.0.0"
   },
   "devDependencies": {
-    "@types/node": "^11.13.5",
-    "typescript": "^3.4.3"
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.8",
+    "mocha": "^6.2.0",
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.5.3"
   }
 }
