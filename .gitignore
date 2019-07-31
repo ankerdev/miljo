@@ -1,6 +1,6 @@
 # Files
-index.d.ts
-index.js
+index.spec.d.ts
+index.spec.js
 
 # Folders
 node_modules
